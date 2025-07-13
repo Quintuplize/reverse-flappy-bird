@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 117258075}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1219586035}
+        m_TargetAssemblyTypeName: GameLogic, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &117258075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +267,7 @@ GameObject:
   - component: {fileID: 372153910}
   - component: {fileID: 372153912}
   m_Layer: 3
-  m_Name: Bird
+  m_Name: Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -332,7 +344,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3803887304354961441, guid: 24021b8057eeeef428ac73a119dafe88, type: 3}
+  m_Sprite: {fileID: -9136834448258697486, guid: 5bdc7e7f094e7d24298072ea99faa171, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -407,8 +419,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.46}
-  m_Radius: 1.96
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2.35
 --- !u!114 &372153912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,7 +579,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.1803922, g: 0.5450981, b: 0.3411765, a: 1}
+  m_BackGroundColor: {r: 0.282353, g: 0.8196079, b: 0.8000001, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -922,7 +934,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 748641268}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1219586035}
+        m_TargetAssemblyTypeName: GameLogic, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &748641268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1292,6 +1316,7 @@ MonoBehaviour:
   playerScore: 0
   playerScoreText: {fileID: 1505165627}
   gameOverScreen: {fileID: 1159729117}
+  pauseMenu: {fileID: 1728433432}
   gameIsActive: 1
 --- !u!4 &1219586036
 Transform:
@@ -1562,7 +1587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1728433433
 RectTransform:
   m_ObjectHideFlags: 0
