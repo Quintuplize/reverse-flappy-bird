@@ -23,6 +23,8 @@ public class GameLogic : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gameIsActive = true;
+        ApplyTimeScale();
     }
 
     public void GameOver()
